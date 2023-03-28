@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+  "dependencies": {
+    "@material/top-app-bar": "^14.0.0",
+    "material-components-web": "^14.0.0"
+=======
   "name": "dance2",
   "version": "1.0.0",
   "description": "",
@@ -25,6 +30,7 @@
     "@material/top-app-bar": "^14.0.0",
     "material-components-web": "^14.0.0",
     "materialize-css": "^1.0.0-rc.2"
+>>>>>>> 174cfd84f4767cf884ab283bbabdc1d6447ed80a
   },
   "devDependencies": {
     "css-loader": "^6.7.3",
