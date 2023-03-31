@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.4.0/material.min.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.4.0/material.min.js"></script>
+</head>
+<body>
+	<div class="mdl-grid">
+	  <div class="mdl-cell mdl-cell--12-col">
+	    <div id="carousel" class="mdl-shadow--2dp">
+	      <div class="mdl-carousel__slide">
+	        <img src="https://via.placeholder.com/350x150">
+	      </div>
+	      <div class="mdl-carousel__slide">
+	        <img src="https://via.placeholder.com/350x150">
+	      </div>
+	      <div class="mdl-carousel__slide">
+	        <img src="https://via.placeholder.com/350x150">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+  			$('#carousel').carousel({
+  				fullWidth: true,
+  				shift: 0,
+  				dist: -50,
+  				duration: 300,
+  				padding: 50
+  			});
+		});
+	</script>
+</body>
+</html>

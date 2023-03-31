@@ -23,72 +23,180 @@
 </style>
 
 <body>
-  <nav class="nav-extended deep-orange darken-2">
-    <div class="nav-wrapper container  ; ">
-      <a href="#!" class="brand-logo">Logo</a>
 
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger btn-floating deep-orange darken-2 "><i
-          class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down ;">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Dance Classes</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Trainers</a></li>
-        <li><a href="#">Media</a></li>
-        <li><a href="#">Contact Us</a></li>
+  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Gilroy";
+      box-sizing: border-box;
+    }
 
-      </ul>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    nav {
+      height: 70px;
+      position: fixed;
+      z-index: 9;
+    }
+
+    .carousel-slider {
+      width: 100%;
+      min-height: 100vh;
+      max-height: 100vh;
+    }
+
+    #first-slide {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      background-image: url(https://images.unsplash.com/photo-1514306191717-452ec28c7814?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80);
+      background-size: cover;
+      background-position: 0% 50%;
+      background-repeat: no-repeat;
+      background-color: rgb(255, 149, 0);
+    }
+
+    .carousel .carousel-item>img {
+      width: 60rem;
+      /* height: 80%; */
+      object-fit: cover;
+      object-position: center;
+    }
+
+    #first-slide>h1 {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+      color: white;
+      border: 2px solid #fff;
+      box-shadow: 5px 5px 10px #fff;
+    }
+
+    #sec>h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      font-size: 6rem;
+      font-weight: 700;
+      text-align: center;
+      color: transparent;
+      -webkit-text-stroke: 5px #fff;
+      mix-blend-mode: difference;
+    }
+
+    #third {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(249, 166, 41);
+    }
+
+    #left {
+      width: 50%;
+      height: 100%;
+      background-image: url(https://images.unsplash.com/photo-1535725525385-bc19d13c503c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80);
+      background-size: cover;
+      background-position: center
+    }
+
+    #right {
+      text-align: center;
+      padding: 2rem 3rem;
+      width: 50%;
+      height: 100%;
+
+    }
+  </style>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo"><img style="width: 3.8rem;" src="./images/sharat-logo.png" alt=""></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Dance Classes</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Trainers</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </nav>
+    <ul class="sidenav collapsible" id="mobile-demo">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Dance Classes</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Trainers</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+
+
+    <!-- home slide -->
+
+    <div class="carousel carousel-slider">
+      <a id="first-slide" class="carousel-item" href="#one!">
+        <h1>Welcome to Sharat Prabath Dance Academy<br><button class="waves-effect waves-light btn"><i
+              class="material-icons left">explore</i>Explore Our Classes</button>
+        </h1>
+        <img src="./images/kindpng_1442766.png">
+
+      </a>
+
+      <a id="sec" style="width: 100vw; height: 100vh; background-color: skyblue;" class="carousel-item" href="#two!">
+        <video src="./raanjhana-semi-classical-one-stop-dance.mp4" autoplay muted loop width="100%" height="100%"
+          style="object-fit: cover; "></video>
+        <h1>Join Us To Learn The ART OF STORY TELLING: KATHAK</h1>
+      </a>
+      <a id="third" class="carousel-item" href="#three!">
+        <div id="left"></div>
+        <div id="right">
+          <h1>About us</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quo vero non nostrum.</p>
+        </div>
+      </a>
     </div>
-  </nav>
+    <div style="width: 100%; height: 100%;" id="page1">
 
-  <ul class="sidenav collapsible" id="mobile-demo">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Dance Classes</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Trainers</a></li>
-    <li><a href="#">Media</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
-
-
-  <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="../images/bgimage.jpg"
-        style="height: 100vh; background-size: cover;">
-      <h1 class="caption center-align">Welcome to Sharat Prabath's dance academy</h1>
-    </a>
-    <div class="carousel-fixed-item center">
-      <h1 class="white-text">Welcome to Sharat Prabath's Dance Academy</h1>
-
-      <a class="waves-effect waves-light btn-large brown darken-4" href="about.html"><i
-          class="material-icons right">explore</i>
-        Explore our classes</a>
     </div>
-    <a class="carousel-item" href="#two!"><img src="https://in.pinterest.com/pin/767371224024679442/"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
 
-  </div>
+    <script>
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+
+      });
+      $(".carousel.carousel-slider").carousel({
+        fullWidth: true,
+        indicators: true
+      });
 
 
+    </script>
 
-  <script>
-    // Or with jQuery
+    <!-- <script src="./js/script.js"></script> -->
 
-    $(document).ready(function () {
-      $(".sidenav").sidenav();
-
-    });
-    $(".carousel.carousel-slider").carousel({
-      fullWidth: true,
-      indicators: true
-    });
-    $('btn-floating').floatingActionButton({
-      toolbarEnabled: true
-    });
-
-  </script>
-
-  <!-- <script src="./js/script.js"></script> -->
-
-</body>
+  </body>
 
 </html>
