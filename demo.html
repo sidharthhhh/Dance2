@@ -17,15 +17,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+
 <style>
 
 </style>
 
 <body>
-  <nav class="nav-extended brown darken-3">
+  <nav class="nav-extended deep-orange darken-2">
     <div class="nav-wrapper container  ; ">
       <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger btn-floating deep-orange darken-2 "><i
+          class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down ;">
         <li><a href="#">Home</a></li>
         <li><a href="#">Dance Classes</a></li>
@@ -33,6 +36,7 @@
         <li><a href="#">Trainers</a></li>
         <li><a href="#">Media</a></li>
         <li><a href="#">Contact Us</a></li>
+
       </ul>
     </div>
   </nav>
@@ -53,13 +57,11 @@
       <h1 class="caption center-align">Welcome to Sharat Prabath's dance academy</h1>
     </a>
     <div class="carousel-fixed-item center">
-      <div class="slider">
-        <h1 class="white-text">Welcome to Sharat Prabath's Dance Academy</h1>
+      <h1 class="white-text">Welcome to Sharat Prabath's Dance Academy</h1>
 
-        <a class="waves-effect waves-light btn-large brown darken-4" href="about.html"><i
-            class="material-icons right">explore</i>
-          Explore our classes</a>
-      </div>
+      <a class="waves-effect waves-light btn-large brown darken-4" href="about.html"><i
+          class="material-icons right">explore</i>
+        Explore our classes</a>
     </div>
     <a class="carousel-item" href="#two!"><img src="https://in.pinterest.com/pin/767371224024679442/"></a>
     <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
@@ -73,17 +75,20 @@
 
     $(document).ready(function () {
       $(".sidenav").sidenav();
-      $('.slider').slider();
 
     });
     $(".carousel.carousel-slider").carousel({
       fullWidth: true,
       indicators: true
     });
+    $('btn-floating').floatingActionButton({
+      toolbarEnabled: true
+    });
 
   </script>
 
   <!-- <script src="./js/script.js"></script> -->
+
 </body>
 
 </html>
