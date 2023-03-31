@@ -17,13 +17,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+<style>
+
+</style>
 
 <body>
-  <nav>
-    <div class="nav-wrapper container">
-      <a href="#!" class="brand-logo"><img src="../images/sharat-logo.png"> Logo</a>
+  <nav class="nav-extended brown darken-3">
+    <div class="nav-wrapper container  ; ">
+      <a href="#!" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down ;">
         <li><a href="#">Home</a></li>
         <li><a href="#">Dance Classes</a></li>
         <li><a href="#">About</a></li>
@@ -34,7 +37,7 @@
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
+  <ul class="sidenav collapsible" id="mobile-demo">
     <li><a href="#">Home</a></li>
     <li><a href="#">Dance Classes</a></li>
     <li><a href="#">About</a></li>
@@ -45,8 +48,20 @@
 
 
   <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="../images/bg1.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+    <a class="carousel-item" href="#one!"><img src="../images/bgimage.jpg"
+        style="height: 100vh; background-size: cover;">
+      <h1 class="caption center-align">Welcome to Sharat Prabath's dance academy</h1>
+    </a>
+    <div class="carousel-fixed-item center">
+      <div class="slider">
+        <h1 class="white-text">Welcome to Sharat Prabath's Dance Academy</h1>
+
+        <a class="waves-effect waves-light btn-large brown darken-4" href="about.html"><i
+            class="material-icons right">explore</i>
+          Explore our classes</a>
+      </div>
+    </div>
+    <a class="carousel-item" href="#two!"><img src="https://in.pinterest.com/pin/767371224024679442/"></a>
     <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
 
   </div>
@@ -58,6 +73,8 @@
 
     $(document).ready(function () {
       $(".sidenav").sidenav();
+      $('.slider').slider();
+
     });
     $(".carousel.carousel-slider").carousel({
       fullWidth: true,
