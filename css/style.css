@@ -199,7 +199,8 @@ nav {
 }
 
 .image-containers img:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
+  transition: ease 0.4s;
 }
 
 
