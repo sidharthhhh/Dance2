@@ -1,12 +1,10 @@
-var FullImgBox = document.getElementById("FullImgBox");
-var fullImg = document.getElementById("FullImg");
+$(document).ready(function () {
+    $(".sidenav").sidenav();
 
-function openFullImg(pic) {
-    FullImgBox.style.display = "flex";
-    FullImg.src = pic;
+  });
+  $(".carousel.carousel-slider").carousel({
+    fullWidth: true,
+    indicators: true
+  });
 
-}
-function closeFullImg() {
-    FullImg.style.display = "none";
-
-}
+  
