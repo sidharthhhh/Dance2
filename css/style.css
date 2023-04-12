@@ -259,7 +259,7 @@ footer a{
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  height: ;
+  height: 100vh;
  }
  .sec2{
   width: 27%;
