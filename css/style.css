@@ -22,6 +22,9 @@ nav {
   z-index: 9;
   background-color: var(--clr-primary);
 }
+nav ul li>a:hover{
+  color:rgb(251, 219, 124)
+}
 .logo {
   width: 7vh;
   height: auto;
@@ -67,12 +70,13 @@ nav {
 }
 
 #sec>h1 {
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   color: transparent;
@@ -206,4 +210,65 @@ img {
 .grid-wrapper .big {
 	grid-column: span 2;
 	grid-row: span 2;
+}
+/* -------------footer------------- */
+footer{
+  width: 100%;
+  height: 150vh;
+  /* background-color: var(--clr-primary); */
+  background-color: black;
+}
+footer h4{
+  color: yellow;
+  padding-top: 2rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+footer h5{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+footer a{
+  color: white;
+}
+.sec3 #name, #email, #contact{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  
+}
+#message {
+  width: 90%;
+  height: 100px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  
+  
+ footer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: ;
+ }
+ .sec2{
+  width: 27%;
+ }
+ .sec3{
+  width: 45%;
+ }
+ .sec1{
+  width: 27%;
+ }
+
 }
