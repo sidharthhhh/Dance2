@@ -17,12 +17,15 @@ body {
   width: 100%;
 }
 nav {
-  height: 70px;
+  height: 5rem;
   position: fixed;
   z-index: 9;
   background-color: var(--clr-primary);
 }
 nav ul li>a:hover{
+  color:rgb(251, 219, 124)
+}
+.sidenav li>a:hover{
   color:rgb(251, 219, 124)
 }
 .logo {
@@ -137,7 +140,9 @@ nav ul li>a:hover{
     top: 20%;
     margin-left: 2rem;
   }
-  
+  #first-slide>h1{
+    width: 90%;
+  }
 }
 
 /* img is same as gellery img classs*/
