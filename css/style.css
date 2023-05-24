@@ -199,7 +199,8 @@ nav {
 }
 
 .image-containers img:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
+  transition: ease 0.4s;
 }
 
 
@@ -212,4 +213,10 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+
+@media (max-width: 600px) {
+  #third {
+    grid-template-columns: repeat(1, 2fr);
+  }
 }

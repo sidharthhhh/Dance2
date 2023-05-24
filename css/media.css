@@ -1,0 +1,32 @@
+.box {
+    display: block;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    padding-left: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+
+}
+
+main {
+    margin-left: 120px;
+    border-radius: 6px;
+}
+
+h1 {
+    font-size: 52px;
+
+}
+
+img:hover {
+    transform: scale(2, 2);
+    transition: .5s;
+    border-radius: 6px;
+}
+
+@media(max-width:1024px) {}

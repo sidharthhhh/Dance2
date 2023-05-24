@@ -5,65 +5,180 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Dance Academy</title>
 </head>
-<link rel="stylesheet" href="./css/style.css">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- j query cdn link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="./js/script.js"></script>
 
 <body>
-  <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span><img class="logo" src="./images/sharat-logo.png" alt=""></span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <a class="mdl-navigation__link" href="">Home</a>
-          <a class="mdl-navigation__link" href="">Dance Classes</a>
-          <a class="mdl-navigation__link" href="">About</a>
-          <a class="mdl-navigation__link" href="">Trainers</a>
-          <a class="mdl-navigation__link" href="">Media</a>
-          <a class="mdl-navigation__link" href="">Contact Us</a>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>
+  <nav class="grey darken-4">
+    <div class="nav-wrapper container grey darken-4">
+      <a href="#!" class="brand-logo"><img style="width: 3.8rem;" src="./images/sharat-logo.png" alt=""></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dance Classes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Trainers</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </div>
-    <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--12-col">
-        <div id="carousel" class="mdl-shadow--2dp">
-          <div class="mdl-carousel__slide">
-            <img src="./images/sharat-logo.png">
-          </div>
-          <div class="mdl-carousel__slide">
-            <img src="./images/sharat-logo.png">
-          </div>
-          <div class="mdl-carousel__slide">
-            <img src="./images/sharat-logo.png">
-          </div>
+
+  </nav>
+
+  <ul class="sidenav grey darken-1" id="mobile-demo">
+    <li>
+
+      <div class="background">
+        <img class="circle" src="./images/sharat-logo.png"
+          style="height: 64px; width: 64px; margin-left: 20px; margin-right: 20px;">
+      </div>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Dance Classes</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Trainers</a></li>
+    <li><a href="#">Media</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+
+  <!-- home slide -->
+
+  <div class="carousel carousel-slider">
+    <a id="first-slide" class="carousel-item" href="#one!">
+      <h1>Welcome to Sharat Prabath Dance Academy<br><button class="waves-effect waves-light btn  red lighten-1"><i
+            class="material-icons left">explore</i>Explore Our Classes</button>
+      </h1>
+      <img src="./images/bgimage.jpg">
+
+    </a>
+
+    <a id="sec" style="width: 100vw; height: 100vh; background-color: skyblue;" class="carousel-item" href="#two!">
+      <video src="./raanjhana-semi-classical-one-stop-dance.mp4" autoplay muted loop width="100%" height="100%"
+        style="object-fit: cover; "></video>
+      <h1>Join Us To Learn The ART OF STORY TELLING: KATHAK</h1>
+    </a>
+    <a id="third" class="carousel-item amber lighten-2" href="#three!">
+      <div id="left"></div>
+      <div id="right">
+        <h1>About us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quo vero non nostrum.</p>
+      </div>
+    </a>
+  </div>
+  <!-- <div style="width: 100%; height: 100%;" id="page1">
+
+    </div> -->
+
+  <!-- sid -->
+  <!-- <section class="classes"> -->
+  <!-- for reference -->
+  <!-- <a href="https://www.figma.com/file/aYrQf4cAiwC9xxBiTJ79yM/Untitled?node-id=1%3A5&t=ZFWr2Yy9l0LOS7pd-1"> -->
+  <!-- </section></a>
+  <h1 class="center">EXPLORE OUR CLASSES</h1>
+  </section> -->
+
+
+  <!-- roshni --> <!-- <a href="https://youtu.be/sHG3Sf6XN9g"></a> -->
+  <section class="masonry__gallery">
+    <div class="full-img" id="FullImgBox">
+      <a href="./about.html" id="FullImg"><img src="./about.html" alt=""></a>
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="containers">
+
+      <h1 class="title"> Explore Our Classes </h1>
+      <div class="image-containers">
+        <div class="im" id="img1">
+
+          <img src="./images/gallery1.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img2">
+
+          <img src="./images/gallery2.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img3">
+
+          <img src="./images/gallery 3.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img4">
+
+          <img src="./images/gallery 4.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img5">
+
+          <img src="./images/gallery 5.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img7">
+
+          <img src="./images/img2.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img8">
+
+          <img src="./images/bgimage.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img9">
+
+          <img src="./images/gallery1.jpg" alt="" onclick="closeFullImg()">
         </div>
       </div>
     </div>
-  </div>
-   
+  </section>
+
+
+  <!--footer  -->
+  <footer class="page-footer  ">
+    <div class="container ">
+      <div class="row ">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact Us </h5>
+          <p class="grey-text text-">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">example@gmail.com</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">+91 xxxxxxxxx</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
   <script>
+    // Or with jQuery
+
     $(document).ready(function () {
-      $('#carousel').carousel();
+      $(".sidenav").sidenav();
+
     });
+    $(".carousel.carousel-slider").carousel({
+      fullWidth: true,
+      indicators: true
+    });
+
+
   </script>
+
+  <!-- <script src="./js/script.js"></script> -->
+
 </body>
 
 </html>

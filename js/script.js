@@ -1,12 +1,12 @@
-var fullImgBox = document.getElementById("fullImgBox");
-var fullImg = document.getElementById("fullImg");
+var FullImgBox = document.getElementById("FullImgBox");
+var fullImg = document.getElementById("FullImg");
 
 function openFullImg(pic) {
-    fullImgBox.style.display = "flex";
-    fullImg.src = pic;
+    FullImgBox.style.display = "flex";
+    FullImg.src = pic;
 
 }
 function closeFullImg() {
-    fullImg.style.display = "none";
+    FullImg.style.display = "none";
 
 }
