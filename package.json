@@ -1,0 +1,12 @@
+{
+  "name": "dance2",
+  "version": "1.0.0",
+  "description": "Dance \r static website for dance acedmy based of \r html, css, JavaScript , for UI design material \r is used.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
